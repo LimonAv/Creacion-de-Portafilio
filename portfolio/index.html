@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title> — Desarrollador Creativo &amp; Diseñador</title>
+<meta name="description" content="Portafolio de Limón: desarrollador y diseñador que transforma retos técnicos complejos en soluciones digitales limpias y escalables." />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/pages.css" />
+</head>
+<body>
+
+<div class="page-shell">
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- ══════════════════ NAV ══════════════════ -->
+  <nav class="site-nav">
+    <div class="site-nav-inner">
+      <a href="#inicio" class="logo">Limón</a>
+
+      <div class="nav-links-desktop">
+        <a href="#inicio" class="nav-link">Inicio</a>
+        <a href="#portafolio" class="nav-link">Portafolio</a>
+        <a href="#acerca" class="nav-link">Acerca de mí</a>
+        <a href="#cv" class="nav-link">CV</a>
+        <a href="#blog" class="nav-link">Blog</a>
+      </div>
+
+      <div class="nav-right">
+        <a href="#contacto" class="btn-nav">Hablemos</a>
+        <button class="hamburger" aria-label="Abrir navegación" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-drawer">
+      <a href="#inicio">Inicio</a>
+      <a href="#portafolio">Portafolio</a>
+      <a href="#acerca">Acerca de mí</a>
+      <a href="#cv">CV</a>
+      <a href="#blog">Blog</a>
+    </div>
+  </nav>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       INICIO
+       ══════════════════════════════════════════════════════════════ -->
+  <section id="inicio" class="section hero">
+    <div class="hero-glow-a glow-breath"></div>
+    <div class="hero-glow-b"></div>
+
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow-label fade-up fu-d1">
+          <span class="rule"></span>
+          Desarrollador Full-Stack
+        </div>
+
+        <h1 class="hero-heading fade-up fu-d2">
+          Hola, soy<br />
+          <span class="accent">José Limón.</span>
+        </h1>
+
+        <p class="hero-desc fade-up fu-d3">
+          Transformo ideas y problemas en soluciones web 
+          funcionales, combinando Java, APIs REST, SQL y tecnologías modernas para crear software
+          eficiente y orientado a resultados.
+
+        </p>
+
+        <div class="hero-btns fade-up fu-d4">
+          <a href="#portafolio" class="btn-primary">Ver Portafolio</a>
+          <a href="assets/cv-limon.pdf" class="btn-secondary" download>Descargar CV</a>
+        </div>
+
+        <div class="contact-row fade-up fu-d4">
+          <a class="contact-item" href="mailto:hola@limon.dev">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            limonavilajosemanuel@gmai.com
+          </a>
+          <a class="contact-item" href="tel:+525512345678">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            +52 55 64343317
+          </a>
+          <span class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Ciudad de México, MX
+          </span>
+        </div>
+
+        <div class="social-row fade-up fu-d4">
+          <a class="social-link" href="https://github.com/LimonAv" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12c0 5.08 3.29 9.38 7.86 10.9.57.1.78-.25.78-.55v-2c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.58.23 2.75.11 3.04.74.8 1.19 1.82 1.19 3.08 0 4.41-2.7 5.38-5.26 5.67.42.36.78 1.07.78 2.16v3.2c0 .3.2.66.79.55A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+          </a>
+          <a class="social-link" href="https://www.linkedin.com/in/joselimonav/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.86 0-2.14 1.45-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+          </a>
+        </div>
+
+        <div class="stack-hint fade-up fu-d4">
+          <span class="label">Stack</span>
+          <span class="rule"></span>
+          <span class="item">JavaScript</span>
+          <span class="item">Java</span>
+          <span class="item">HTML</span>
+          <span class="item">CSS</span>
+          <span class="item">Bootstrap</span>
+          <span class="item">Python</span>
+          <span class="item">Flaks</span>
+          <span class="item">TypeScript</span>
+          <span class="item">Angular</span>
+          <span class="item">Eclipse</span>
+          <span class="item">VSCode</span>
+          <span class="item">Git</span>
+        </div>
+      </div>
+
+      <div class="lemon-stage">
+        <div class="lemon-glow glow-breath"></div>
+        <canvas id="lemon-canvas" width="360" height="280" aria-label="Limón animado en 3D"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       PORTAFOLIO
+       ══════════════════════════════════════════════════════════════ -->
+  <section id="portafolio" class="section" style="padding-top:20px;">
+    <div class="eyebrow reveal"><span class="eyebrow-num">02</span><span class="eyebrow-rule"></span></div>
+    <h2 class="section-title reveal">Portafolio</h2>
+    <div class="section-underline reveal"></div>
+
+    <div class="filter-row reveal">
+      <button class="filter-btn is-active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="web">Desarrollo Web</button>
+      <button class="filter-btn" data-filter="data">Datos</button>
+      <button class="filter-btn" data-filter="creative">Creative Coding</button>
+    </div>
+
+    <div class="grid-3">
+      <a href="#" class="project-card glass reveal" data-category="data">
+        <div class="project-card-media">
+          <img src="https://images.unsplash.com/photo-1720962158813-29b66b8e23e1?w=700&h=420&fit=crop&auto=format" alt="Dashboard analítico oscuro en pantalla" />
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-cat">Analítica</div>
+          <h3 class="project-card-title">Visualización de Datos</h3>
+          <p class="project-card-desc">Dashboard de alto rendimiento enfocado en transformar datos complejos en información visual clara.</p>
+          <div class="tag-row"><span class="tag">React</span><span class="tag">D3.js</span></div>
+        </div>
+        <div class="project-card-accent"></div>
+      </a>
+
+      <a href="#" class="project-card glass reveal" data-category="web">
+        <div class="project-card-media">
+          <img src="https://images.unsplash.com/photo-1539278383962-a7774385fa02?w=700&h=420&fit=crop&auto=format" alt="Laptop mostrando una tienda de ropa en línea" />
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-cat">Tienda Orgánica</div>
+          <h3 class="project-card-title">E-Commerce</h3>
+          <p class="project-card-desc">Experiencia de comercio moderna que combina interfaces responsivas con un diseño enfocado en el producto.</p>
+          <div class="tag-row"><span class="tag">JavaScript</span><span class="tag">Bootstrap</span></div>
+        </div>
+        <div class="project-card-accent"></div>
+      </a>
+
+      <a href="#" class="project-card glass reveal" data-category="creative">
+        <div class="project-card-media">
+          <img src="https://images.unsplash.com/photo-1759185423800-78e12803fe92?w=700&h=420&fit=crop&auto=format" alt="Arte generativo geométrico abstracto" />
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-cat">Algoritmos Generativos</div>
+          <h3 class="project-card-title">Creative Coding</h3>
+          <p class="project-card-desc">Visuales algorítmicos experimentales que exploran la relación entre código, geometría y formas orgánicas.</p>
+          <div class="tag-row"><span class="tag">JavaScript</span><span class="tag">Canvas</span></div>
+        </div>
+        <div class="project-card-accent"></div>
+      </a>
+
+      <a href="#" class="project-card glass reveal" data-category="web">
+        <div class="project-card-media">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=700&h=420&fit=crop&auto=format" alt="Interfaz de aplicación web de productividad" />
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-cat">SaaS</div>
+          <h3 class="project-card-title">App de Gestión de Tareas</h3>
+          <p class="project-card-desc">Aplicación colaborativa con tableros en tiempo real, pensada para equipos pequeños de producto.</p>
+          <div class="tag-row"><span class="tag">Next.js</span><span class="tag">PostgreSQL</span></div>
+        </div>
+        <div class="project-card-accent"></div>
+      </a>
+
+      <a href="#" class="project-card glass reveal" data-category="data">
+        <div class="project-card-media">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&h=420&fit=crop&auto=format" alt="Gráficas y métricas de un modelo de datos" />
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-cat">Machine Learning</div>
+          <h3 class="project-card-title">Predicción de Demanda</h3>
+          <p class="project-card-desc">Modelo de series de tiempo para anticipar demanda de inventario con visualización de resultados.</p>
+          <div class="tag-row"><span class="tag">Python</span><span class="tag">Pandas</span></div>
+        </div>
+        <div class="project-card-accent"></div>
+      </a>
+
+      <a href="#" class="project-card glass reveal" data-category="creative">
+        <div class="project-card-media">
+          <img src="https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=700&h=420&fit=crop&auto=format" alt="Instalación de arte generativo con luces" />
+        </div>
+        <div class="project-card-body">
+          <div class="project-card-cat">Experimental</div>
+          <h3 class="project-card-title">Partículas Interactivas</h3>
+          <p class="project-card-desc">Sistema de partículas reactivo al audio, construido con WebGL para instalaciones en vivo.</p>
+          <div class="tag-row"><span class="tag">WebGL</span><span class="tag">GLSL</span></div>
+        </div>
+        <div class="project-card-accent"></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       ACERCA DE MÍ
+       ══════════════════════════════════════════════════════════════ -->
+  <section id="acerca" class="section" style="padding-top:20px;">
+    <div class="eyebrow reveal"><span class="eyebrow-num">03</span><span class="eyebrow-rule"></span></div>
+    <h2 class="section-title reveal">Acerca de mí</h2>
+    <div class="section-underline reveal"></div>
+
+    <div class="about-grid">
+      <div class="about-portrait reveal">
+        <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?w=700&h=800&fit=crop&auto=format" alt="Retrato ilustrativo de perfil profesional" />
+      </div>
+
+      <div class="about-story reveal">
+        <p>
+          Crecí pensando que las cosas interesantes pasaban cuando algo se
+          desarmaba y yo tenía que entender por qué. Esa curiosidad —un poco
+          terca, un poco ácida, como buen Limón— es la que hoy uso para
+          diseñar y programar productos digitales.
+        </p>
+        <p>
+          Empecé en la programación de forma autodidacta, armando pequeños
+          sitios y experimentos visuales por las noches. Con el tiempo eso se
+          convirtió en una carrera: pasé de construir interfaces por diversión
+          a liderar el desarrollo de productos completos, siempre buscando el
+          punto exacto entre una solución técnica sólida y una experiencia
+          visual que se sienta viva.
+        </p>
+        <p>
+          Me formé en Ingeniería en Sistemas Computacionales y complementé esa
+          base con cursos y comunidades de diseño de producto, porque creo que
+          el mejor código es el que también se ve bien y se siente bien de
+          usar. Hoy combino ambos mundos en cada proyecto que tomo.
+        </p>
+        <p>
+          Fuera de la pantalla, disfruto de la cocina (sí, uso mucho limón),
+          el senderismo los fines de semana y grabar pequeños tutoriales para
+          mi canal, donde comparto lo que voy aprendiendo. Creo firmemente en
+          construir en público y en que compartir el proceso —errores
+          incluidos— es la forma más honesta de crecer como profesional.
+        </p>
+
+        <div class="pill-row">
+          <span class="pill">Curioso por naturaleza</span>
+          <span class="pill">Detallista con el diseño</span>
+          <span class="pill">Aprendo en público</span>
+          <span class="pill">Amante del café y el limón</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="value-grid">
+      <div class="value-card glass reveal">
+        <div class="value-num">01</div>
+        <h3 class="value-title">Claridad primero</h3>
+        <p class="value-desc">Prefiero una solución simple y bien explicada sobre una compleja que nadie más entienda.</p>
+      </div>
+      <div class="value-card glass reveal">
+        <div class="value-num">02</div>
+        <h3 class="value-title">Cuido el detalle</h3>
+        <p class="value-desc">Los micro-momentos —una transición, un espaciado— son los que hacen que un producto se sienta cuidado.</p>
+      </div>
+      <div class="value-card glass reveal">
+        <div class="value-num">03</div>
+        <h3 class="value-title">Aprendizaje constante</h3>
+        <p class="value-desc">Cada proyecto es una excusa para aprender algo nuevo y compartirlo con quien venga después.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CV
+       ══════════════════════════════════════════════════════════════ -->
+  <section id="cv" class="section" style="padding-top:20px;">
+    <div class="cv-top">
+      <div>
+        <div class="eyebrow reveal"><span class="eyebrow-num">04</span><span class="eyebrow-rule"></span></div>
+        <h2 class="section-title reveal" style="margin-bottom:8px;">Currículum</h2>
+        <p class="page-lede reveal">Un resumen de mi camino académico y profesional hasta hoy.</p>
+      </div>
+      <a href="assets/cv-limon.pdf" class="btn-primary cv-download reveal" download>Descargar PDF</a>
+    </div>
+
+    <div class="cv-block">
+      <h3 class="section-title reveal" style="font-size:20px;">Experiencia profesional</h3>
+      <div class="section-underline reveal"></div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-period">2024 — Presente</div>
+          <h4 class="timeline-role">Desarrollador Frontend Senior</h4>
+          <div class="timeline-org">Estudio Digital Cítrico</div>
+          <p class="timeline-desc">
+            Lidero el desarrollo de interfaces para productos SaaS, defino la
+            arquitectura de componentes en React/TypeScript y mentoro a un
+            equipo de tres desarrolladores junior.
+          </p>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-period">2022 — 2024</div>
+          <h4 class="timeline-role">Desarrollador Full-Stack</h4>
+          <div class="timeline-org">Agencia Verde Lima</div>
+          <p class="timeline-desc">
+            Construí desde cero e integré APIs para más de doce sitios de
+            clientes, mejorando en promedio un 35% los tiempos de carga
+            mediante optimización de assets y renderizado.
+          </p>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-period">2020 — 2022</div>
+          <h4 class="timeline-role">Desarrollador Junior</h4>
+          <div class="timeline-org">Cooperativa de Software Semilla</div>
+          <p class="timeline-desc">
+            Di mis primeros pasos profesionales dando mantenimiento a
+            aplicaciones internas y aprendiendo buenas prácticas de control de
+            versiones y trabajo en equipo ágil.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-block">
+      <h3 class="section-title reveal" style="font-size:20px;">Formación académica</h3>
+      <div class="section-underline reveal"></div>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-period">2016 — 2020</div>
+          <h4 class="timeline-role">Ingeniería en Sistemas Computacionales</h4>
+          <div class="timeline-org">Universidad Tecnológica</div>
+          <p class="timeline-desc">
+            Titulado con mención honorífica. Proyecto final: plataforma de
+            visualización de datos ambientales en tiempo real.
+          </p>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="timeline-dot"></span>
+          <div class="timeline-period">2023</div>
+          <h4 class="timeline-role">Certificación en Diseño de Producto</h4>
+          <div class="timeline-org">Escuela de Diseño Digital</div>
+          <p class="timeline-desc">
+            Programa intensivo enfocado en investigación de usuario,
+            prototipado y sistemas de diseño.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-block" style="margin-bottom:0;">
+      <h3 class="section-title reveal" style="font-size:20px;">Habilidades técnicas</h3>
+      <div class="section-underline reveal"></div>
+
+      <div class="skills-grid">
+        <div class="skill-chip glass reveal"><div class="name">React / TypeScript</div><div class="bar"><span style="width:92%"></span></div></div>
+        <div class="skill-chip glass reveal"><div class="name">Node.js</div><div class="bar"><span style="width:85%"></span></div></div>
+        <div class="skill-chip glass reveal"><div class="name">Python</div><div class="bar"><span style="width:78%"></span></div></div>
+        <div class="skill-chip glass reveal"><div class="name">UI / UX Design</div><div class="bar"><span style="width:80%"></span></div></div>
+        <div class="skill-chip glass reveal"><div class="name">CSS / Animación</div><div class="bar"><span style="width:90%"></span></div></div>
+        <div class="skill-chip glass reveal"><div class="name">D3.js</div><div class="bar"><span style="width:70%"></span></div></div>
+        <div class="skill-chip glass reveal"><div class="name">PostgreSQL</div><div class="bar"><span style="width:72%"></span></div></div>
+        <div class="skill-chip glass reveal"><div class="name">Git / CI-CD</div><div class="bar"><span style="width:88%"></span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       BLOG
+       ══════════════════════════════════════════════════════════════ -->
+  <section id="blog" class="section" style="padding-top:20px;">
+    <div class="eyebrow reveal"><span class="eyebrow-num">05</span><span class="eyebrow-rule"></span></div>
+    <h2 class="section-title reveal">Blog</h2>
+    <div class="section-underline reveal"></div>
+
+    <a href="#" class="blog-featured glass reveal">
+      <div class="blog-featured-media">
+        <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=900&h=700&fit=crop&auto=format" alt="Código en una pantalla oscura" />
+      </div>
+      <div class="blog-featured-body">
+        <div class="blog-tag">Destacado · Desarrollo</div>
+        <h3 class="blog-featured-title">Por qué migré mi stack a TypeScript (y no me arrepiento)</h3>
+        <p class="blog-featured-excerpt">
+          Después de meses dudando, cuento el proceso real de migración: los
+          errores que encontré, el tiempo que tomó y por qué hoy considero que
+          fue una de las mejores decisiones técnicas que he tomado.
+        </p>
+        <span class="blog-meta">12 min de lectura · Ago 2026</span>
+      </div>
+    </a>
+
+    <div class="grid-2">
+      <a href="#" class="post-card glass reveal">
+        <div class="blog-tag">Diseño</div>
+        <h4 class="post-card-title">Glassmorphism: cuándo usarlo y cuándo evitarlo</h4>
+        <p class="post-card-excerpt">Una guía práctica sobre en qué contextos este estilo visual realmente aporta valor —y cuándo solo es ruido.</p>
+        <span class="blog-meta">6 min · Jul 2026</span>
+      </a>
+
+      <a href="#" class="post-card glass reveal">
+        <div class="blog-tag">Carrera</div>
+        <h4 class="post-card-title">Cómo estructuro mi portafolio para conseguir entrevistas</h4>
+        <p class="post-card-excerpt">Los criterios que uso para decidir qué proyectos mostrar y cómo los presento para generar interés real.</p>
+        <span class="blog-meta">8 min · Jun 2026</span>
+      </a>
+
+      <a href="#" class="post-card glass reveal">
+        <div class="blog-tag">Creative Coding</div>
+        <h4 class="post-card-title">Dibujando un limón en canvas: notas de un experimento</h4>
+        <p class="post-card-excerpt">El proceso detrás de la animación 3D del limón de este portafolio, gradientes, sombras y todo lo demás.</p>
+        <span class="blog-meta">10 min · May 2026</span>
+      </a>
+
+      <a href="#" class="post-card glass reveal">
+        <div class="blog-tag">Performance</div>
+        <h4 class="post-card-title">Cinco cosas que hago antes de lanzar cualquier sitio</h4>
+        <p class="post-card-excerpt">Mi checklist personal de rendimiento, accesibilidad y SEO técnico antes de considerar un proyecto terminado.</p>
+        <span class="blog-meta">7 min · Abr 2026</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       CONTACTO / CTA FINAL
+       ══════════════════════════════════════════════════════════════ -->
+  <section id="contacto" class="cta-block">
+    <h2 class="section-title reveal">¿Trabajamos juntos?</h2>
+    <p class="reveal">
+      Siempre estoy abierto a conversar sobre nuevos proyectos, ideas
+      creativas u oportunidades para formar parte de tu visión.
+    </p>
+    <div class="cta-btns reveal">
+      <a href="mailto:hola@limon.dev" class="btn-primary">Escríbeme</a>
+      <a href="#acerca" class="btn-secondary">Conóceme más</a>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════════
+       FOOTER
+       ══════════════════════════════════════════════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">Limón</div>
+        <div class="footer-copy">© 2026 Limón. Construido con precisión técnica<br class="footer-br" /> y visión orgánica.</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank" rel="noopener" class="footer-link">GitHub</a>
+        <a href="https://linkedin.com/" target="_blank" rel="noopener" class="footer-link">LinkedIn</a>
+        <a href="https://youtube.com/" target="_blank" rel="noopener" class="footer-link">YouTube</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="js/background.js"></script>
+<script src="js/lemon.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
