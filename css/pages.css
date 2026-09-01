@@ -209,8 +209,6 @@ a.contact-item:hover { color: var(--lime); }
   border-radius: var(--radius-md);
   overflow: hidden;
   transition: transform 0.26s ease, box-shadow 0.26s ease, border-color 0.26s ease, background 0.26s ease;
-  cursor: pointer;
-  text-decoration: none;
   display: block;
 }
 .project-card:hover {
@@ -232,6 +230,35 @@ a.contact-item:hover { color: var(--lime); }
 .project-card-title { font-weight: 700; font-size: 18px; color: #E8EEE0; margin: 0 0 10px; letter-spacing: -0.022em; }
 .project-card-desc { font-size: 13px; line-height: 1.7; color: rgba(148, 160, 145, 0.85); margin: 0 0 18px; }
 .tag-row { display: flex; gap: 8px; flex-wrap: wrap; }
+
+/* ── Botones de acción dentro de la tarjeta (repo / demo) ─────── */
+.project-card-links { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 18px; }
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--lime);
+  background: transparent;
+  border: 1px solid rgba(183, 213, 50, 0.3);
+  border-radius: 999px;
+  padding: 8px 15px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease;
+}
+.project-btn svg { width: 13px; height: 13px; flex-shrink: 0; }
+.project-btn:hover { background: rgba(183, 213, 50, 0.1); border-color: var(--lime); transform: translateY(-2px); }
+.project-btn-primary {
+  background: var(--lime);
+  color: #0c1210;
+  border-color: var(--lime);
+}
+.project-btn-primary:hover { background: #c3e13f; box-shadow: 0 0 16px rgba(183, 213, 50, 0.4); }
+
 .tag {
   font-family: var(--font-mono); font-size: 11px; font-weight: 500; color: rgba(183, 213, 50, 0.74);
   background: rgba(183, 213, 50, 0.055); border: 1px solid rgba(183, 213, 50, 0.18);
