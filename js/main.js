@@ -29,6 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
   // ── Scrollspy: resalta el link de la sección visible ────────────
   const navLinks = document.querySelectorAll(".nav-link, .mobile-drawer a");
   const sections = Array.from(navLinks)
+    // Solo links que son anclas de sección (#id); ignora links a
+    // archivos como el PDF del CV, que no son selectores CSS válidos.
+    .filter((link) => (link.getAttribute("href") || "").startsWith("#"))
     .map((link) => document.querySelector(link.getAttribute("href")))
     .filter(Boolean);
 
