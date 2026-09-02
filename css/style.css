@@ -40,11 +40,19 @@ body {
   margin: 0;
   padding: 10px;
   min-height: 100vh;
+  cursor: url('../assets/cursor-lemon.png') 16 16, auto;
 }
 
 a { color: inherit; }
 img { max-width: 100%; display: block; }
 button { font-family: inherit; }
+
+/* ============================================================
+   CURSOR PERSONALIZADO (limón pixel art)
+   ============================================================ */
+a, button, [role="button"] {
+  cursor: url('../assets/cursor-lemon-hover.png') 16 16, pointer;
+}
 
 .page-shell {
   position: relative;
